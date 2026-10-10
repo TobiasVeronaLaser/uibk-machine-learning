@@ -31,3 +31,22 @@ ps/project_submission/sign_lang_train
 *.vrb
 *.xdv
 
+
+# ML model checkpoints
+*.pt
+*.pth
+
+# Large datasets / arrays
+*.npy
+*.npz
+*.parquet
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# Python / Jupyter cache
+__pycache__/
+.ipynb_checkpoints/
+ps/project-prototyp/

@@ -59,7 +59,7 @@ def make_transforms(image_size: int = 64, augment: bool = False):
 
     tfms.extend([  # add final transformations to the pipeline
         transforms.ToTensor(),  # image to pytorch tensor
-        transforms.Normalize(mean=[0.5], std=[0.5]),  # normalize the tensor to have mean 0.5 and std 0.5
+        transforms.Normalize(mean=[0.5], std=[0.5]),  # normalize pixel values from [0, 1] to about [-1, 1]
     ])
 
     return transforms.Compose(tfms)  # put tranformation into a pipeline
